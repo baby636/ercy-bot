@@ -8,7 +8,9 @@
     "dev": "HOSTNAME=$NETWORK NODE_ENV=development bash scripts/dev.sh",
     "test": "npx mocha --recursive --exit --timeout 10000",
     "deploy-token": "bash scripts/deploy-token.sh",
-    "docs": "bash scripts/docs.sh"
+    "docs": "bash scripts/docs.sh",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "keywords": [
     "slack",
@@ -39,7 +41,8 @@
     "redis-server": "^1.1.0",
     "slack-node": "^0.1.8",
     "web3": "^0.20.7",
-    "winston": "^2.4.0"
+    "winston": "^2.4.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "acorn": "^7.0.0",
@@ -64,5 +67,6 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:ealmansi/ercy-bot.git"
-  }
+  },
+  "snyk": true
 }
