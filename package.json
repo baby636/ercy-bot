@@ -32,7 +32,7 @@
     "express": "^4.16.2",
     "ganache-cli": "^6.6.0",
     "left-pad": "^1.2.0",
-    "moment": "^2.19.2",
+    "moment": "^2.29.2",
     "promise-retry": "^1.1.1",
     "random-js": "^1.0.8",
     "redis": "^2.8.0",
